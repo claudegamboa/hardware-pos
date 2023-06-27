@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "hjCfm7ur6IY4wOMphZ49Fv8qbF9W7FSRh331pImiKbwYl+4JQFxJVoBLzS963DF8GV7BarSwyFBGq5yETgPl5Q==",
+  "success": true,
+  "projectFilePath": "/Users/claudegamboa/Documents/dev/hardware-pos/hardware-pos.Api/hardware-pos.Api.csproj",
+  "expectedPackageFiles": [
+    "/Users/claudegamboa/.nuget/packages/microsoft.aspnetcore.openapi/7.0.8/microsoft.aspnetcore.openapi.7.0.8.nupkg.sha512",
+    "/Users/claudegamboa/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "/Users/claudegamboa/.nuget/packages/microsoft.openapi/1.4.3/microsoft.openapi.1.4.3.nupkg.sha512",
+    "/Users/claudegamboa/.nuget/packages/swashbuckle.aspnetcore/6.5.0/swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
+    "/Users/claudegamboa/.nuget/packages/swashbuckle.aspnetcore.swagger/6.5.0/swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "/Users/claudegamboa/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.5.0/swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
+    "/Users/claudegamboa/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.5.0/swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

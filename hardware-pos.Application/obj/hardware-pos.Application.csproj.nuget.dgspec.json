@@ -1,0 +1,62 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/claudegamboa/Documents/dev/hardware-pos/hardware-pos.Application/hardware-pos.Application.csproj": {}
+  },
+  "projects": {
+    "/Users/claudegamboa/Documents/dev/hardware-pos/hardware-pos.Application/hardware-pos.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/claudegamboa/Documents/dev/hardware-pos/hardware-pos.Application/hardware-pos.Application.csproj",
+        "projectName": "hardware-pos.Application",
+        "projectPath": "/Users/claudegamboa/Documents/dev/hardware-pos/hardware-pos.Application/hardware-pos.Application.csproj",
+        "packagesPath": "/Users/claudegamboa/.nuget/packages/",
+        "outputPath": "/Users/claudegamboa/Documents/dev/hardware-pos/hardware-pos.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/claudegamboa/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/abstract-tech/55cc7631-a75b-438e-a51d-79714c7f43f7/_packaging/IntegrateFeed/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/7.0.305/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
