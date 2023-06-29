@@ -7,4 +7,12 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\hardware-pos.Domain\hardware-pos.Domain.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="BarCode" Version="2023.6.1" />
+    </ItemGroup>
+
 </Project>

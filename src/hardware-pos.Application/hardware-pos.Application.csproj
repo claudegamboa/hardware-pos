@@ -7,4 +7,8 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\hardware-pos.Domain\hardware-pos.Domain.csproj" />
+    </ItemGroup>
+
 </Project>
