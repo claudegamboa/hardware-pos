@@ -14,8 +14,6 @@ public class UnitOfWork : IUnitOfWork
     
     public Task Commit()
     {
-        var advancedHasChanges = _asyncDocumentSession.Advanced.HasChanges;
-        Console.WriteLine(advancedHasChanges);
         return _asyncDocumentSession.SaveChangesAsync();
     }
 }

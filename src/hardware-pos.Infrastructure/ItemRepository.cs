@@ -15,11 +15,7 @@ public class ItemRepository : IItemRepository, IDisposable
     
     public Task Add(Item item)
     {
-        var task = _asyncDocumentSession.StoreAsync(item, EntityId(item));
-        
-        Console.WriteLine(_asyncDocumentSession.Advanced.HasChanges);
-
-        return task;
+        return _asyncDocumentSession.StoreAsync(item, EntityId(item));
     }
 
     public Task<Item> Load(Guid id)
