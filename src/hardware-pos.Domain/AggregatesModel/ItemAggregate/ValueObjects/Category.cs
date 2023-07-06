@@ -18,20 +18,20 @@ public class Category : Entity
     {
         switch (@event)
         {
-            case ItemAggregate.DomainEvents.CategoryEvents.CategoryCreated e:
+            case DomainEvents.CategoryEvents.CategoryCreated e:
                 Id = e.Id;
                 Name = e.Name;
                 Description = e.Description;
                 UnitsOfMeasure = e.UnitOfMeasure;
                 // Image
                 break;
-            case ItemAggregate.DomainEvents.CategoryEvents.CategoryNameUpdated e:
+            case DomainEvents.CategoryEvents.CategoryNameUpdated e:
                 break;
-            case ItemAggregate.DomainEvents.CategoryEvents.CategoryDescriptionUpdated e:
+            case DomainEvents.CategoryEvents.CategoryDescriptionUpdated e:
                 break;
-            case ItemAggregate.DomainEvents.CategoryEvents.CategoryUnitOfMeasureUpdated e:
+            case DomainEvents.CategoryEvents.CategoryUnitOfMeasureUpdated e:
                 break;
-            case ItemAggregate.DomainEvents.CategoryEvents.CategoryImageUploaded e:
+            case DomainEvents.CategoryEvents.CategoryImageUploaded e:
                 break;
         }
     }

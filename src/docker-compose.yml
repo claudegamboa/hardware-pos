@@ -1,0 +1,10 @@
+services:
+
+  ravendb:
+    container_name: pos-ravendb
+    image: ravendb/ravendb
+    ports:
+      - 8080:8080
+    environment:
+      - RAVEN_Security_UnsecuredAccessAllowed=PublicNetwork
+      - RAVEN_ARGS="--Setup.Mode=None"

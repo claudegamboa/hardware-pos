@@ -27,8 +27,8 @@ public class ItemSpec
     private static void AssertProperties(Item item, Guid categoryId, string name, string description, decimal salesPrice,
         string taxType, State state)
     {
-        item.Id.ShouldNotBeSameAs(Guid.Empty);
-        item.CategoryId.Value.ShouldBe(categoryId);
+        item.ItemId.ShouldNotBeSameAs(Guid.Empty);
+        item.CategoryId.ShouldBe(categoryId);
         item.Name.Value.ShouldBe(name);
         item.Description.Value.ShouldBe(description);
         item.SalesPrice.Value.ShouldBe(salesPrice);
@@ -114,9 +114,9 @@ public class ItemSpec
         
         var item = new Item(categoryId, name, description, salesPrice, taxType, unitOfMeasure);
 
-        var qrCodeArray = Encoding.ASCII.GetBytes(item.Id.ToString() + item.Name.Value);
+        var qrCodeArray = Encoding.ASCII.GetBytes(item.ItemId.ToString() + item.Name.Value);
         
-        item.GenerateQrCode(QrCode.FromIdAndName(item.Id, name, qrCodeGenerate));
+        item.GenerateQrCode(QrCode.FromIdAndName(item.ItemId.Value, name, qrCodeGenerate));
         
         item.QrCode.Value.ShouldBe(qrCodeArray);
     }

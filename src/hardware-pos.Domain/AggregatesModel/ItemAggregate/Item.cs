@@ -5,8 +5,9 @@ namespace hardware_pos.Domain.AggregatesModel.ItemAggregate;
 
 public class Item : Entity
 {
-    public Guid Id { get; private set; }
-    public CategoryId CategoryId { get; private set; }
+    public string Id { get; private set; }
+    public ItemId ItemId { get; private set; }
+    public Guid CategoryId { get; private set; }
     public Name Name { get; private set; }
     public Description Description { get; private set; }
     public QrCode QrCode { get; private set; }
@@ -36,7 +37,7 @@ public class Item : Entity
     {
         Apply(new DomainEvents.ItemEvents.QrCodeGenerated()
         {
-            Id = Id,
+            Id = ItemId.Value,
             QrCode = qrcode
         });
     }
@@ -45,7 +46,7 @@ public class Item : Entity
     {
         Apply(new DomainEvents.ItemEvents.ItemRemoved()
         {
-            Id = Id
+            Id = ItemId.Value
         });
     }
 
@@ -59,8 +60,9 @@ public class Item : Entity
         switch (@event)
         {
             case DomainEvents.ItemEvents.ItemCreated e:
-                Id = Guid.NewGuid();
-                CategoryId = new CategoryId(e.CategoryId);
+                ItemId = new ItemId(Guid.NewGuid());
+                Id = ItemId.Value.ToString();
+                CategoryId = e.CategoryId;
                 Name = new Name(e.Name);
                 Description = new Description(e.Description);
                 SalesPrice = new SalesPrice(e.SalesPrice);
